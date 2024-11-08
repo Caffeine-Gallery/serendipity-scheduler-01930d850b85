@@ -1,0 +1,7 @@
+service : {
+  getRandomColor: () -> (text);
+  getRandomQuote: () -> (text);
+  getRandomTip: () -> (text);
+  getStats: () -> (nat, nat) query;
+  recordSession: (nat) -> ();
+}

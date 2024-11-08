@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Flow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="text-center mb-4">
+                    <h1>Focus Flow</h1>
+                    <p class="lead">Enhance your productivity with timed focus sessions</p>
+                </div>
+
+                <div class="timer-card">
+                    <div class="timer-display">
+                        <span id="minutes">25</span>:<span id="seconds">00</span>
+                    </div>
+                    <div class="progress mb-3">
+                        <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 100%"></div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button id="startButton" class="btn btn-primary btn-lg">Start Focus Session</button>
+                        <button id="resetButton" class="btn btn-secondary btn-lg" disabled>Reset</button>
+                    </div>
+                </div>
+
+                <div id="messageBox" class="message-box mt-4 d-none">
+                    <p id="message" class="mb-0"></p>
+                </div>
+
+                <div class="stats-card mt-4">
+                    <h3>Your Progress</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Total Sessions: <span id="totalSessions">0</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Total Focus Time: <span id="totalTime">0</span> min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
